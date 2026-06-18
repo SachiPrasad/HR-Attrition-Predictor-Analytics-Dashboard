@@ -1,27 +1,3 @@
-# Employee Attrition Prediction & HR Analytics Dashboard
-
-An end-to-end data science and machine learning system that diagnoses the structural drivers of employee turnover, builds a predictive pipeline to assess flight risk, and provides an interactive dashboard for HR managers.
-
-## Project Structure
-
-```
-Employee_Attrition_Project/
-├── dataset/
-│   ├── employee_attrition.csv          # Raw downloaded dataset
-│   ├── cleaned_employee_attrition.csv  # Preprocessed dataset for modeling/Tableau
-│   └── feature_importances.csv         # Feature weights exported from the model
-├── notebooks/
-│   └── EDA_and_Modeling.ipynb          # Step-by-step EDA and pipeline workbook
-├── src/
-│   ├── data_cleaning.py               # Preprocessing and SQLite database loader
-│   └── model.py                        # ColumnTransformer & Random Forest training pipeline
-├── dashboard/
-│   └── app.py                          # Streamlit interactive multi-tab application
-├── reports/
-│   ├── Tableau_Guide.md               # Visual layout steps for Tableau
-│   └── Business_Insights.md            # Strategic business recommendations
-└── employee_attrition.db               # Local SQLite database containing HR records
-```
 
 # Employee Attrition Prediction & HR Analytics Dashboard
 
