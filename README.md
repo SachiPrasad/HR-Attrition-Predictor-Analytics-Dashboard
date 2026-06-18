@@ -23,35 +23,184 @@ Employee_Attrition_Project/
 └── employee_attrition.db               # Local SQLite database containing HR records
 ```
 
-## Setup & Running Instructions
+# Employee Attrition Prediction & HR Analytics Dashboard
 
-### 1. Install Dependencies
-Ensure you have Python 3.10+ installed. In your terminal, run:
-```bash
-pip install -r requirements.txt
-```
+An end-to-end HR Analytics solution that identifies employee attrition patterns, predicts employee turnover risk using Machine Learning, and provides actionable workforce insights through interactive dashboards.
 
-### 2. Preprocess Data & Initialize SQLite
-Run the cleaning script to download the raw dataset, generate the cleaned CSV, and load it into the database:
-```bash
-python src/data_cleaning.py
-```
+---
 
-### 3. Train the Model Pipeline
-Run the model script to preprocess features, train the Random Forest Classifier, serialize the pipeline, and output metrics:
-```bash
-python src/model.py
-```
+## Live Dashboard
 
-### 4. Interactive Dashboard
-Launch the Streamlit dashboard:
-```bash
-https://hr-attrition-predictor-analytics-dashboard-bvlsgz3k6mx8cwfalom.streamlit.app/
-```
+🚀 **Interactive Dashboard**
 
-## Features & Highlights
+[Open Live Dashboard](https://hr-attrition-predictor-analytics-dashboard-bvlsgz3k6mx8cwfalom.streamlit.app/)
 
-- **Machine Learning Pipeline**: Uses `ColumnTransformer` to bundle numerical scaling and categorical one-hot encoding with a `RandomForestClassifier`. Evaluates performance using stratified splits and handles class imbalance directly.
-- **What-If Risk Simulator**: An interactive panel where HR managers can adjust employee attributes (e.g., age, salary, overtime, satisfaction) and see an instant risk assessment paired with automated retention recommendations.
-- **Embedded SQL Playground**: A SQL runner tab inside the dashboard allowing recruiters to query the SQLite table (`employees`) directly, see results in real-time, and run preset analytic queries.
-- **Tableau Readiness**: Exports clean datasets ready to load into Tableau, backed by a detailed design guide (`reports/Tableau_Guide.md`).
+---
+
+## Project Overview
+
+Employee attrition is one of the most critical challenges faced by organizations. High turnover leads to increased hiring costs, reduced productivity, and loss of organizational knowledge.
+
+This project helps HR teams:
+
+* Analyze workforce trends
+* Identify key attrition drivers
+* Predict employees at risk of leaving
+* Generate data-driven retention strategies
+
+---
+
+## Features
+
+### HR Analytics Dashboard
+
+* Employee Attrition Rate
+* Department-wise Attrition Analysis
+* Salary vs Attrition Analysis
+* Overtime Impact Analysis
+* Job Satisfaction Insights
+
+### Employee Attrition Prediction
+
+Predicts whether an employee is likely to leave based on:
+
+* Age
+* Monthly Income
+* Overtime Status
+* Job Satisfaction
+* Years at Company
+* Work Environment Factors
+
+### Attrition Risk Simulator
+
+Interactive What-If analysis allowing HR managers to:
+
+* Modify employee attributes
+* Assess turnover risk instantly
+* Receive retention recommendations
+
+### SQL Analytics Module
+
+Run custom SQL queries directly on employee data to perform:
+
+* Department Analysis
+* Workforce Distribution
+* Compensation Analysis
+* Attrition Investigation
+
+---
+
+## Machine Learning Pipeline
+
+Dataset
+↓
+Data Cleaning
+↓
+Exploratory Data Analysis
+↓
+Feature Engineering
+↓
+Random Forest Classification
+↓
+Prediction
+↓
+Interactive Dashboard
+
+---
+
+## Technology Stack
+
+### Programming
+
+* Python
+
+### Data Analysis
+
+* Pandas
+* NumPy
+
+### Machine Learning
+
+* Scikit-Learn
+* Random Forest Classifier
+
+### Visualization
+
+* Plotly
+* Matplotlib
+* Seaborn
+
+### Dashboard
+
+* Streamlit
+
+### Database
+
+* SQLite
+* SQLAlchemy
+
+---
+
+## Results
+
+### Model Performance
+
+* Accuracy: XX%
+* Precision: XX%
+* Recall: XX%
+* F1 Score: XX%
+
+### Top Attrition Drivers
+
+1. Overtime
+2. Monthly Income
+3. Job Satisfaction
+4. Age
+5. Years At Company
+
+---
+
+## Business Insights
+
+Key findings from the analysis:
+
+* Employees working overtime exhibited significantly higher attrition rates.
+* Lower-income employees demonstrated increased turnover probability.
+* Employees with low job satisfaction were more likely to leave.
+* Early-career employees showed higher attrition risk than experienced employees.
+
+---
+
+## Project Structure
+
+Employee_Attrition_Project/
+
+├── dataset/
+
+├── notebooks/
+
+├── src/
+
+├── dashboard/
+
+├── reports/
+
+├── assets/
+
+└── employee_attrition.db
+
+---
+
+## Future Enhancements
+
+* XGBoost Model Integration
+* Employee Segmentation using K-Means Clustering
+* Real-Time HR Monitoring
+* Automated Retention Recommendations
+* Cloud Deployment
+
+---
+
+## Author
+Sachi Prasad
+
