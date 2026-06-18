@@ -43,10 +43,10 @@ Run the model script to preprocess features, train the Random Forest Classifier,
 python src/model.py
 ```
 
-### 4. Start the Interactive Dashboard
+### 4. Interactive Dashboard
 Launch the Streamlit dashboard:
 ```bash
-streamlit run dashboard/app.py
+https://hr-attrition-predictor-analytics-dashboard-bvlsgz3k6mx8cwfalom.streamlit.app/
 ```
 
 ## Features & Highlights
